@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left_slide">
+            <div class="circle_container">
+                <div class="circle"><img src="./assets/1.png"></div>
+                <div class="circle"><img src="./assets/2.jpg"></div>
+                <div class="circle"><img src="./assets/3.png"></div>
+            </div>
+            <div class="text">Start to design<br>Wisely</div>
+        </div>
+        <div class="right_slide">
+            <div class="title">Sign in to Clever</div>
+            <div class="icon_container">
+                <div class="icon"><i class="fa-brands fa-google fa-lg"></i></div>
+                <div class="icon"><i class="fa-brands fa-apple fa-lg"></i></div>
+                <div class="icon"><i class="fa-brands fa-facebook-f fa-lg"></i></div>
+            </div>
+            <div class="small">
+                <div class="line"></div>
+                <div>or do it via email</div>
+                <div class="line"></div>
+            </div>
+            <form id="myForm">
+                <div class="input_field">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" value="" placeholder="@mail.com">
+                </div>
+                <div class="input_field">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" value="" placeholder="Password">
+                    <span>Must be 8 characters atleast</span>
+                </div>
+                <div class="input_row">
+                    <input type="checkbox" name="checked" id="checked">
+                    <label for="checked">Remember me</label>
+                    <a href="#" class="link">Forget Password?</a>
+                </div>
+                <div class="sign_in" id="submitButton">
+                    Sign in
+                </div>
+                <div class="copy_right">
+                    2021 All rights reserved
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var submitButton = document.getElementById("submitButton");
+        submitButton.addEventListener("click", function () {
+            var form = document.getElementById("myForm");
+            form.submit();
+        });
+    });
+</script>
+</html>
